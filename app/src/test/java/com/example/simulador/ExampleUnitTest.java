@@ -1,4 +1,4 @@
-package com.example.aula01;
+package com.example.simulador;
 
 import org.junit.Test;
 
