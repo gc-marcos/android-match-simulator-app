@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/marginDefault">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgTimeCasa"
+            android:layout_width="@dimen/imgPadrao"
+            android:layout_height="@dimen/imgPadrao"
+            android:layout_marginStart="@dimen/marginDefault"
+            android:layout_marginTop="@dimen/marginDefault"
+            android:contentDescription="@string/cd_time_casa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtTimeCasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginDefault"
+            android:layout_marginBottom="@dimen/marginDefault"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imgTimeCasa"
+            app:layout_constraintStart_toStartOf="@+id/imgTimeCasa"
+            app:layout_constraintTop_toBottomOf="@+id/imgTimeCasa"
+            tools:text="TextView" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtPlacaCasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTimeCasa"
+            app:layout_constraintEnd_toStartOf="@+id/txtVersus"
+            app:layout_constraintStart_toEndOf="@+id/imgTimeCasa"
+            app:layout_constraintTop_toTopOf="@+id/imgTimeCasa"
+            tools:text="00" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtVersus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtContra"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTimeCasa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgTimeCasa" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgTimeVisitante"
+            android:layout_width="@dimen/imgPadrao"
+            android:layout_height="@dimen/imgPadrao"
+            android:layout_marginTop="@dimen/marginDefault"
+            android:layout_marginEnd="@dimen/marginDefault"
+            android:contentDescription="@string/imagenTimeVisitante"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtTimeVisitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginDefault"
+            android:layout_marginBottom="@dimen/marginDefault"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imgTimeVisitante"
+            app:layout_constraintStart_toStartOf="@+id/imgTimeVisitante"
+            app:layout_constraintTop_toBottomOf="@+id/imgTimeVisitante"
+            tools:text="TextView" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtPlacaVisitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTimeVisitante"
+            app:layout_constraintEnd_toStartOf="@+id/imgTimeVisitante"
+            app:layout_constraintStart_toEndOf="@+id/txtVersus"
+            app:layout_constraintTop_toTopOf="@+id/imgTimeVisitante"
+            tools:text="00" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

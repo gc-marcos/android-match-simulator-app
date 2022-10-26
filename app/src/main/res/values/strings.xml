@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">Aula 01</string>
+    <string name="app_name">Simulador</string>
     <string name="linha1">Meu Primeiro App!!</string>
     <string name="linha2">Corrigindo</string>
+    <string name="bt_simulador">Botão de Simulador</string>
+    <string name="cd_time_casa">Imagem Time Casa</string>
+    <string name="txtContra">X</string>
+    <string name="imagenTimeVisitante">Imagen do Time Visitante</string>
 </resources>

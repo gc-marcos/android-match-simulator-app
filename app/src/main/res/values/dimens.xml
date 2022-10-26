@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginDefault">16dp</dimen>
+    <dimen name="imgPadrao">120dp</dimen>
+    <dimen name="appBar">180dp</dimen>
+</resources>
