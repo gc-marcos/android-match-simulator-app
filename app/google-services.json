@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "640095631414",
+    "project_id": "simulador-ab6ed",
+    "storage_bucket": "simulador-ab6ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640095631414:android:867ad78f18e54b26608097",
+        "android_client_info": {
+          "package_name": "com.example.aula01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640095631414-gilf8vt4masfu9n16dm0v6kooa5sd1bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsAVSdMLQK8i8Z7VUMrWbGAb9v1Ku8CdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640095631414-gilf8vt4masfu9n16dm0v6kooa5sd1bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
