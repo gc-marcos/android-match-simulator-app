@@ -25,10 +25,34 @@ class MainActivity : AppCompatActivity() {
     private fun setupMatches() {
         matches.addAll(
             listOf(
-                Match("Flamengo", "Corinthians", description = "Clássico Nacional"),
-                Match("Palmeiras", "São Paulo", description = "Derby Paulista"),
-                Match("Grêmio", "Internacional", description = "Grenal"),
-                Match("Atlético MG", "Cruzeiro", description = "Clássico Mineiro")
+                Match(
+                    homeTeam = "Flamengo",
+                    awayTeam = "Corinthians",
+                    description = "Clássico Nacional",
+                    homeTeamLogo = R.drawable.ic_escudo_vermelho,
+                    awayTeamLogo = R.drawable.ic_escudo_preto
+                ),
+                Match(
+                    homeTeam = "Palmeiras",
+                    awayTeam = "São Paulo",
+                    description = "Derby Paulista",
+                    homeTeamLogo = R.drawable.ic_escudo_verde,
+                    awayTeamLogo = R.drawable.ic_escudo_vermelho
+                ),
+                Match(
+                    homeTeam = "Grêmio",
+                    awayTeam = "Internacional",
+                    description = "Grenal",
+                    homeTeamLogo = R.drawable.ic_escudo_azulclaro,
+                    awayTeamLogo = R.drawable.ic_escudo_vermelho
+                ),
+                Match(
+                    homeTeam = "Atlético MG",
+                    awayTeam = "Cruzeiro",
+                    description = "Clássico Mineiro",
+                    homeTeamLogo = R.drawable.ic_escudo_preto,
+                    awayTeamLogo = R.drawable.ic_escudo_azul
+                )
             )
         )
     }
@@ -41,6 +65,8 @@ class MainActivity : AppCompatActivity() {
                 putExtra(DetailActivity.EXTRA_HOME_SCORE, match.homeScore)
                 putExtra(DetailActivity.EXTRA_AWAY_SCORE, match.awayScore)
                 putExtra(DetailActivity.EXTRA_DESCRIPTION, match.description)
+                putExtra(DetailActivity.EXTRA_HOME_LOGO, match.homeTeamLogo)
+                putExtra(DetailActivity.EXTRA_AWAY_LOGO, match.awayTeamLogo)
             }
             startActivity(intent)
         }

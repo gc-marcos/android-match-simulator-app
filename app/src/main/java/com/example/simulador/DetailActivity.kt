@@ -12,6 +12,8 @@ class DetailActivity : AppCompatActivity() {
         const val EXTRA_HOME_SCORE = "extra_home_score"
         const val EXTRA_AWAY_SCORE = "extra_away_score"
         const val EXTRA_DESCRIPTION = "extra_description"
+        const val EXTRA_HOME_LOGO = "extra_home_logo"
+        const val EXTRA_AWAY_LOGO = "extra_away_logo"
     }
 
     private lateinit var binding: ActivityDetailBinding
@@ -29,12 +31,18 @@ class DetailActivity : AppCompatActivity() {
         val homeScore = intent.getIntExtra(EXTRA_HOME_SCORE, 0)
         val awayScore = intent.getIntExtra(EXTRA_AWAY_SCORE, 0)
         val description = intent.getStringExtra(EXTRA_DESCRIPTION) ?: ""
+        val homeLogo = intent.getIntExtra(EXTRA_HOME_LOGO, R.drawable.ic_escudo_vermelho)
+        val awayLogo = intent.getIntExtra(EXTRA_AWAY_LOGO, R.drawable.ic_escudo_preto)
 
         binding.tvDescription.text = description
         binding.tvHomeTeamName.text = homeTeam
         binding.tvAwayTeamName.text = awayTeam
         binding.tvHomeTeamScore.text = homeScore.toString()
         binding.tvAwayTeamScore.text = awayScore.toString()
+        binding.ivHomeTeam.setImageResource(homeLogo)
+        binding.ivAwayTeam.setImageResource(awayLogo)
+
+        supportActionBar?.title = "$homeTeam x $awayTeam"
     }
 
     override fun onSupportNavigateUp(): Boolean {

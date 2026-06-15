@@ -14,6 +14,8 @@ class MatchAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(match: Match) {
+            binding.imgTimeCasa.setImageResource(match.homeTeamLogo)
+            binding.imgTimeVisitante.setImageResource(match.awayTeamLogo)
             binding.txtTimeCasa.text = match.homeTeam
             binding.txtTimeVisitante.text = match.awayTeam
             binding.txtPlacaCasa.text = match.homeScore.toString()
